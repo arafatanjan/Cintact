@@ -9,9 +9,8 @@ def display_menu():
     print("2. View Contacts")
     print("3. Remove Contact")
     print("4. Search Contacts")
-    print("5. Save Contacts to File")
-    print("6. Load Contacts from File")
-    print("7. Exit")
+    print("5. Load Contacts from File")
+    print("6. Exit")
 
 
 # contacts = load_contacts_from_file()
@@ -33,11 +32,9 @@ while True:
     elif choice == "4":
         query = input("Enter name or phone to search: ")
         search_contacts(query)
-    # elif choice == "5":
-    #     save_contacts_to_file()
-    elif choice == "6":
+    elif choice == "5":
         load_contacts_from_file()
-    elif choice == "7":
+    elif choice == "6":
         # save_contacts_to_file(contacts)  
         print("Thank you for using the Contact Book Management System!")
         break

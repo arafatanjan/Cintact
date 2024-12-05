@@ -3,8 +3,16 @@ from file_operations import save_contacts_to_file
 
 contacts = []
 
-def add_contact(name, email, phone, address):
+def add_contact(name, email, phone, address) :
     for contact in contacts:
+        if not isinstance(name, str):
+            print("Invalid name! The name must be a non-empty string.")
+            return
+
+        if not phone.isdigit():
+            print("Invalid phone number! The phone number must be a valid integer.")
+            return
+        
         if contact['phone'] == phone:
             print("Error: This phone number already exists!")
             return
