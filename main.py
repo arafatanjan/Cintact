@@ -3,7 +3,7 @@ from contact import add_contact, view_contacts, remove_contact, search_contacts
 from file_operations import save_contacts_to_file, load_contacts_from_file
 
 def display_menu():
-    """Display the main menu to the user."""
+    
     print("\n===== Contact Book Management =====")
     print("1. Add Contact")
     print("2. View Contacts")
